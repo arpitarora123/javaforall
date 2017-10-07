@@ -1,0 +1,2 @@
+# javaforall
+Java practice code
