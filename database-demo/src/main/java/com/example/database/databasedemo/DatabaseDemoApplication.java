@@ -16,7 +16,7 @@ public class DatabaseDemoApplication implements CommandLineRunner {
 	
 	@Autowired
 	PersonJdbcDao personJdbcDao;
-	
+	 
 	public static void main(String[] args) {
 		SpringApplication.run(DatabaseDemoApplication.class, args);
 	}
