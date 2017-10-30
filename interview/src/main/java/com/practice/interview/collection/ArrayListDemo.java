@@ -3,11 +3,13 @@ package com.practice.interview.collection;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListDemo {
+public class ArrayListDemo {
 	public static void main(String[] args) {
 		// Initial default Capacity is 10
 		// Good for random access O(1)
-
+		// Good for inserting item at the end
+		// Not good for item removal
+		// Not good for item insertion at the beginning or in the middle
 		List<String> list = new ArrayList<String>();
 		list.add("India");
 		list.add(1, "Australia");
