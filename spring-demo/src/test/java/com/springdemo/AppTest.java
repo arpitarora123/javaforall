@@ -1,4 +1,4 @@
-package spring_demo.com.springdemo;
+package com.springdemo;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
