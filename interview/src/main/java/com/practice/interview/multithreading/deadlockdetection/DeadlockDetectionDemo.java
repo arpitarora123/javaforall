@@ -1,4 +1,6 @@
-package com.practice.interview.multithreading;
+package com.practice.interview.multithreading.deadlockdetection;
+
+import java.util.concurrent.TimeUnit;
 
 /*
  * Deadlock is getting creating due to ordering of the locks we are acquiring
@@ -6,7 +8,7 @@ package com.practice.interview.multithreading;
  * To prevent arising of dead lock condition acquire lock in same order. 
  */
 
-public class DeadLockCreation {
+public class DeadlockDetectionDemo {
 
 	String firstName = "Arpit";
 	String lastName = "Arora";
@@ -49,8 +51,29 @@ public class DeadLockCreation {
 
 	public static void main(String[] args) {
 
-		DeadLockCreation dc = new DeadLockCreation();
+		// Executor service : TO learn more about it
+		// ScheduledExecutorService scheduler =
+		// Executors.newScheduledThreadPool(1);
+
+		/*
+		 * ThreadMXBean bean = ManagementFactory.getThreadMXBean(); long[]
+		 * threadIds = bean.findDeadlockedThreads(); // Returns null if no //
+		 * threads are // deadlocked.
+		 * 
+		 * if (threadIds != null) { ThreadInfo[] infos =
+		 * bean.getThreadInfo(threadIds);
+		 * 
+		 * System.out.println("We are here in deadlock detection"); for
+		 * (ThreadInfo info : infos) { StackTraceElement[] stack =
+		 * info.getStackTrace(); // Log or store stack trace information. } }
+		 */
+
+		DeadlockDetectionDemo dc = new DeadlockDetectionDemo();
 		System.out.println("Let's start the threads");
+
+		// Deadlock detection
+		DeadlockDetector deadlockDetector = new DeadlockDetector(new DeadlockConsoleHandler(), 10, TimeUnit.SECONDS);
+		deadlockDetector.start();
 		dc.t1.start();
 		dc.t2.start();
 
