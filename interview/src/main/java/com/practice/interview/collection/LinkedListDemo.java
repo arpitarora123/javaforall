@@ -5,8 +5,8 @@ import java.util.List;
 
 public class LinkedListDemo {
 	public static void main(String[] args) {
-		// Not good for random access O(1)
-		// Good for inserting item at the beginning
+		// Not good for random access
+		// Good for inserting item at the beginning O(1)
 		// Good for item removal
 		// Good for item insertion at the beginning
 		// Not good for item insertion at the end

@@ -11,7 +11,7 @@ public class DeadLockCreation {
 	String firstName = "Arpit";
 	String lastName = "Arora";
 
-	Thread t1 = new Thread("Thread t1") {
+	private Thread t1 = new Thread("Thread t1") {
 		@Override
 		public void run() {
 			synchronized (firstName) {

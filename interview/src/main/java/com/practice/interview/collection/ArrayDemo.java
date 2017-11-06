@@ -9,6 +9,7 @@ public class ArrayDemo {
 		object[2] = 3.00;
 
 		System.out.println(object[0] + " " + object[1] + " " + object[2]);
+		System.out.println(object[0].getClass() + " " + object[1].getClass() + " " + object[2].getClass());
 	}
 
 }

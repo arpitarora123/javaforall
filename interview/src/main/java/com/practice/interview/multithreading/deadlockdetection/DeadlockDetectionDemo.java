@@ -51,7 +51,7 @@ public class DeadlockDetectionDemo {
 
 	public static void main(String[] args) {
 
-		// Executor service : TO learn more about it
+		// Executor service : To learn more about it
 		// ScheduledExecutorService scheduler =
 		// Executors.newScheduledThreadPool(1);
 

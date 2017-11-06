@@ -8,6 +8,7 @@ public class ArrayLengthVsSize {
 		numberOfStudent[0] = 0;
 		numberOfStudent[1] = 1;
 
+		// Length is a property(field) in array, not a method
 		System.out.println(numberOfStudent.length);
 	}
 }

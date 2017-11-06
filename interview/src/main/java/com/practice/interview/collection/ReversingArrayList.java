@@ -3,7 +3,7 @@ package com.practice.interview.collection;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ArrayListDemo {
+public class ReversingArrayList {
 	public static void main(String[] args) {
 		// Initial default Capacity is 10
 		// Good for random access O(1)

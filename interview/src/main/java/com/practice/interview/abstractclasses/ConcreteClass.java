@@ -19,4 +19,10 @@ public class ConcreteClass extends FirstAbstractClass {
 
 	}
 
+	@Override
+	public void concreteMethod() {
+		// TODO Auto-generated method stub
+
+	}
+
 }
