@@ -1,6 +1,9 @@
 package com.practice.interview.collection;
 
 public class ArrayLengthVsSize {
+	protected int protectedDemo;
+
+	int defaultDemo;
 
 	public static void main(String[] args) {
 		int[] numberOfStudent = new int[10];
