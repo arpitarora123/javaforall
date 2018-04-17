@@ -6,7 +6,7 @@ public class ChildClass extends ParentClass {
 	// throws it from overridden method
 	@Override
 	public void m1() {
-		System.out.println("Parent -> m1()");
+		System.out.println("Child -> m1()");
 	}
 
 	// Can't override private method
@@ -31,9 +31,24 @@ public class ChildClass extends ParentClass {
 
 	}
 
-	public static void main(String[] args) {
+	public void m8() {
+		System.out.println("m8 -> c");
+	}
+
+	@Override
+	protected double sum(int a, double b) {
+		return 5;
+	}
+
+	public static void main(String[] args) throws Exception {
 		ChildClass childClass = new ChildClass();
 		childClass.m1();
+		childClass.m8();
+
+		ParentClass parentChild = new ChildClass();
+		parentChild.m1();
+		// parentChild.m8();
+		System.out.println(new ChildClass().a);
 	}
 
 }

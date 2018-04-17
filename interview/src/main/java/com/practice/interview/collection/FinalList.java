@@ -15,6 +15,7 @@ public class FinalList {
 		list.add("For");
 		list.add("All");
 		list.remove("Java");
+		list.remove(1);
 
 		for (Object object : list) {
 			System.out.println(object);

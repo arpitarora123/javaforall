@@ -4,12 +4,14 @@ import java.io.IOException;
 
 public class ParentClass {
 
+	int a = 5;
+
 	public void m1() throws ClassNotFoundException {
 		System.out.println("Parent -> m1()");
 	}
 
-	private void m2() {
-
+	public void m2() {
+		System.out.println("Parent -> m2()");
 	}
 
 	protected void m3(int i) throws Exception {
@@ -23,5 +25,9 @@ public class ParentClass {
 	// Checked Exception
 	public void m5() throws IOException {
 
+	}
+
+	protected double sum(int a, double b) {
+		return a + b;
 	}
 }
