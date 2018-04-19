@@ -35,8 +35,10 @@ public class UnmodifiableListDemo {
 			System.out.print(s + " ");
 		}
 
-		// We can assign new list reference to unmodifiable list as it's not
-		// final
+		/*
+		 * We can assign new list reference to unmodifiable list as it's not
+		 * final
+		 */
 		unmodifiableList = list;
 		System.out.println();
 		for (String s : unmodifiableList) {

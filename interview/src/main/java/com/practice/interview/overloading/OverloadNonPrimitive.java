@@ -6,6 +6,7 @@ public class OverloadNonPrimitive {
 		System.out.println("String " + s);
 	}
 
+	/* If uncomment this call using null will be a compilation error */
 	// public void test(Double d) {
 	// System.out.println("Double " + d);
 	// }
@@ -20,7 +21,9 @@ public class OverloadNonPrimitive {
 
 	public static void main(String[] args) {
 		OverloadNonPrimitive onp = new OverloadNonPrimitive();
-		// onp.test(null);
+
+		/* First promotion to Other object */
+		onp.test(null);
 	}
 
 }

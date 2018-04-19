@@ -24,7 +24,12 @@ public class ParentClass {
 
 	// Checked Exception
 	public void m5() throws IOException {
+		System.out.println("Parent -> m5()");
+	}
 
+	// Not overloading this method
+	public void m6() throws IOException {
+		System.out.println("Parent -> m6()");
 	}
 
 	protected double sum(int a, double b) {
