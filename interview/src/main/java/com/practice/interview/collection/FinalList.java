@@ -34,6 +34,5 @@ public class FinalList {
 		for (Object object : list2) {
 			System.out.println(object);
 		}
-
 	}
 }

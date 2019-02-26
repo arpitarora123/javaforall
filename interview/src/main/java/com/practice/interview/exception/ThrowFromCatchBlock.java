@@ -21,7 +21,7 @@ public class ThrowFromCatchBlock {
 			// finally block will be executed even if we have return or throw in
 			// try and/or catch block
 			System.out.println("Hello finally block!");
-			// if if return from the finally block it will override the return
+			// if we return from the finally block it will override the return
 			// value from try block, below line will print 2
 			// return 2;
 		}
