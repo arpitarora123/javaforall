@@ -28,7 +28,7 @@ public class RangeImplem implements Range {
 	/**
 	 * {@inheritDoc}
 	 */
-	@Override
+	// @Override
 	public Range newRange(int from, int to) {
 		RangeImplem range = new RangeImplem();
 		range.rangeList = new ArrayList<Integer>();
@@ -45,7 +45,7 @@ public class RangeImplem implements Range {
 	/**
 	 * {@inheritDoc}
 	 */
-	@Override
+	// @Override
 	public boolean isIn(int value) {
 		boolean isIn = false;
 		for (int i = 0; i < this.rangeList.size(); i += 2) {
@@ -60,7 +60,7 @@ public class RangeImplem implements Range {
 	/**
 	 * {@inheritDoc}
 	 */
-	@Override
+	// @Override
 	public int min() {
 		if (null == this.rangeList || 1 > this.rangeList.size()) {
 			throw new IllegalArgumentException("Range is invalid");
@@ -71,7 +71,7 @@ public class RangeImplem implements Range {
 	/**
 	 * {@inheritDoc}
 	 */
-	@Override
+	// @Override
 	public int max() {
 		if (null == this.rangeList || 1 > this.rangeList.size()) {
 			throw new IllegalArgumentException("Range is invalid");
@@ -82,7 +82,7 @@ public class RangeImplem implements Range {
 	/**
 	 * {@inheritDoc}
 	 */
-	@Override
+	// @Override
 	public Range add(Range r) {
 		RangeImplem rangeToAdd = (RangeImplem) r;
 		if (null == this.rangeList || null == rangeToAdd.rangeList) {

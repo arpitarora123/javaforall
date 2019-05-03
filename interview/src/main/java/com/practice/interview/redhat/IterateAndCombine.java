@@ -27,7 +27,7 @@ public class IterateAndCombine {
 	 * @return List<String> - Combined sorted list of both the iterators
 	 */
 	public List<String> combine(Iterator<String> itr1, Iterator<String> itr2) {
-		final List<String> merged = new ArrayList<>();
+		final List<String> merged = new ArrayList<String>();
 		// String value1 = "";
 		String value1 = itr1.hasNext() ? itr1.next() : null;
 		String value2 = itr2.hasNext() ? itr2.next() : null;

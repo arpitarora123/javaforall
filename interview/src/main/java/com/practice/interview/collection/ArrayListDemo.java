@@ -18,10 +18,10 @@ public class ArrayListDemo {
 		// New entry, shifts/Move the records
 		list.add(1, "Germany");
 
-		System.out.println("Size {} " + list.size());
+		System.out.println("Size " + list.size());
 
 		for (String string : list) {
-			System.out.println("List {}" + string);
+			System.out.println("List " + string);
 		}
 
 		// no new entry, update the existing record
